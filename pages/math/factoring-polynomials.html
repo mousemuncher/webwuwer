@@ -6,44 +6,513 @@
     <title>Factoring Polynomials</title>
 </head>
 <body>
-    <h1>Factoring Polynomials Reviewer</h1> 
-    <p class="subtitle">Grade 8 Mathematics</p><hr>
-
-    <div id="understanding-polynomials">
-
+    <h1>Factoring Polynomials Reviewer</h1>
+    <p class="subtitle">Grade 8 Mathematics</p>
+    <hr>
+    
+    <div id="understand-polynomials">
+        <h2>Understanding Polynomials Before We Factor</h2>
+        <p>
+            Before we factor, we need to understand what a polynomial is. 
+            A <strong>polynomial</strong> is an expression made up of terms added 
+            or <strong>subtracted</strong> together. Each term has a coefficient (number) and 
+            variables with <strong>exponents</strong>.
+        </p>
+        <p><strong>Example:</strong> 3x<sup>2</sup> + 7x - 5</p>
+        <ul>
+            <li>First term: 3x<sup>2</sup> (coefficient is 3)</li>
+            <li>Second term: 7x (coefficient is 7)</li>
+            <li>Third term: -5 (this is a constant)</li>
+        </ul>
+        <p>
+            When we factor, we're finding what we can pull out of all terms. 
+            Think of it like finding common ingredients in a recipe.
+        </p>
     </div>
-
+    
+    <hr>
+    
     <div id="method-gcf">
-
+        <h2>Method 1: Greatest Common Factor (GCF)</h2>
+        
+        <h3>What is GCF?</h3>
+        <p class="desc">
+            The Greatest Common Factor is the largest number or variable 
+            that divides evenly into all terms. It's like finding the 
+            biggest piece that all terms share.
+        </p>
+        
+        <div class="example-box">
+            <h4>Understanding GCF</h4>
+            <p>Look at 12x<sup>2</sup> + 8x</p>
+            <ul>
+                <li>What divides into 12? 1, 2, 3, 4, 6, 12</li>
+                <li>What divides into 8? 1, 2, 4, 8</li>
+                <li>What divides into both? 1, 2, 4 → <strong>Greatest is 4</strong></li>
+            </ul>
+            <p>Both terms also have at least one <em>x</em>, so our GCF is 4x.</p>
+        </div>
+        
+        <h3>Steps for GCF Factoring</h3>
+        <ol>
+            <li>Find the GCF of all coefficients</li>
+            <li>Find the lowest power of each variable that appears in <strong>every</strong> term</li>
+            <li>Factor out the GCF</li>
+            <li>Write what's left in parentheses</li>
+        </ol>
+        
+        <div class="example-box">
+            <h4>Detailed Example</h4>
+            <p>
+                Factor 6x<sup>3</sup> + 9x<sup>2</sup> - 12x
+            </p>
+            <p>
+                <strong>Step 1:</strong> GCF of numbers (6, 9, 12)
+            </p>
+            <ul>
+                <li>6 = 2 × 3</li>
+                <li>9 = 3 × 3</li>
+                <li>12 = 2 × 2 × 3</li>
+                <li>Common factor: 3</li>
+            </ul>
+            <p>
+                <strong>Step 2:</strong> Each term has at least one <em>x</em> → x<sup>1</sup>
+            </p>
+            <p>
+                <strong>Step 3:</strong> GCF = 3x
+            </p>
+            <p>
+                <strong>Step 4:</strong> 6x<sup>3</sup> + 9x<sup>2</sup> - 12x = 3x(2x<sup>2</sup> + 3x - 4)
+            </p>
+        </div>
+        
+        <div class="practice-box">
+            <h4>Practice Problem</h4>
+            <p>
+                Factor each polynomial using GCF:
+            </p>
+            <ol type="a">
+                <li>5a + 10b</li>
+                <li>4x<sup>2</sup> + 8x</li>
+                <li>15m<sup>3</sup> + 10m<sup>2</sup> - 5m</li>
+            </ol>
+        </div>
     </div>
-
+    
+    <hr>
+    
     <div id="method-dots">
-
+        <h2>Method 2: Difference of Two Squares (DOTS)</h2>
+        
+        <h3>What is DOTS?</h3>
+        <p class="desc">
+            DOTS stands for <strong>Difference Of Two Squares</strong>. This is when you have two perfect squares being subtracted.
+        </p>
+        <p>
+            The pattern: a<sup>2</sup> - b<sup>2</sup> = (a + b)(a - b)
+        </p>
+        
+        <h3>Recognizing Perfect Squares</h3>
+        <p class="desc">
+            A perfect square is a number or expression that can be written as something times itself.
+        </p>
+        
+        <div class="example-box">
+            <h4>Perfect Square Recognition</h4>
+            <ul>
+                <li>x<sup>2</sup> = x × x → perfect square</li>
+                <li>4 = 2 × 2 = 2<sup>2</sup> → perfect square</li>
+                <li>9x<sup>2</sup> = 3x × 3x = (3x)<sup>2</sup> → perfect square</li>
+                <li>x = x<sup>1</sup> → NOT a perfect square</li>
+                <li>3x<sup>2</sup> → NOT a perfect square (3 isn't a perfect square)</li>
+            </ul>
+        </div>
+        
+        <h3>How to Factor Using DOTS</h3>
+        <ol>
+            <li>Confirm both terms are perfect squares</li>
+            <li>Confirm there's a minus sign between them</li>
+            <li>Take the square root of each term</li>
+            <li>Write as (square root 1 + square root 2)(square root 1 - square root 2)</li>
+        </ol>
+        
+        <div class="example-box">
+            <h4>Detailed Example</h4>
+            <p>Factor x<sup>2</sup> - 25</p>
+            <p><strong>Step 1:</strong> Is x<sup>2</sup> a perfect square? Yes, square root is x</p>
+            <p><strong>Step 2:</strong> Is 25 a perfect square? Yes, square root is 5</p>
+            <p><strong>Step 3:</strong> Do we have a minus sign? Yes ✓</p>
+            <p><strong>Step 4:</strong> x<sup>2</sup> - 25 = (x + 5)(x - 5)</p>
+        </div>
+        
+        <div class="example-box">
+            <h4>More Complex Example</h4>
+            <p>Factor 9a<sup>4</sup> - 16b<sup>2</sup></p>
+            <p><strong>Step 1:</strong> Square root of 9a<sup>4</sup> = 3a<sup>2</sup></p>
+            <p><strong>Step 2:</strong> Square root of 16b<sup>2</sup> = 4b</p>
+            <p><strong>Step 3:</strong> Both are perfect squares with minus sign ✓</p>
+            <p><strong>Step 4:</strong> 9a<sup>4</sup> - 16b<sup>2</sup> = (3a<sup>2</sup> + 4b)(3a<sup>2</sup> - 4b)</p>
+        </div>
+        
+        <div class="practice-box">
+            <h4>Practice Problem</h4>
+            <p>
+                Factor each polynomial using DOTS:
+            </p>
+            <ol type="a">
+                <li>x<sup>2</sup> - 16</li>
+                <li>4a<sup>2</sup> - 9</li>
+                <li>m<sup>2</sup> - 100n<sup>2</sup></li>
+            </ol>
+        </div>
     </div>
-
-    <div id="method-sdots">
-
+    
+    <hr>
+    
+    <div id="method-sdotc">
+        <h2>Method 3: Sum and Difference of Cubes (SDOTC)</h2>
+        
+        <h3>What is SDOTC?</h3>
+        <p class="desc">
+            SDOTC handles <strong>Sum</strong> and <strong>Difference</strong> of cubes. These are similar to DOTS but with cubes instead of squares.
+        </p>
+        <ul>
+            <li><strong>Sum of Cubes:</strong> a<sup>3</sup> + b<sup>3</sup> = (a + b)(a<sup>2</sup> - ab + b<sup>2</sup>)</li>
+            <li><strong>Difference of Cubes:</strong> a<sup>3</sup> - b<sup>3</sup> = (a - b)(a<sup>2</sup> + ab + b<sup>2</sup>)</li>
+        </ul>
+        
+        <h3>Recognizing Perfect Cubes</h3>
+        <p class="desc">
+            A perfect cube is something multiplied by itself three times.
+        </p>
+        
+        <div class="example-box">
+            <h4>Perfect Cube Recognition</h4>
+            <ul>
+                <li>x<sup>3</sup> = x × x × x → perfect cube</li>
+                <li>8 = 2 × 2 × 2 = 2<sup>3</sup> → perfect cube</li>
+                <li>27a<sup>3</sup> = 3a × 3a × 3a = (3a)<sup>3</sup> → perfect cube</li>
+                <li>64b<sup>6</sup> = 4b<sup>2</sup> × 4b<sup>2</sup> × 4b<sup>2</sup> = (4b<sup>2</sup>)<sup>3</sup> → perfect cube</li>
+            </ul>
+        </div>
+        
+        <h3>How to Factor Using Sum of Cubes</h3>
+        <p>For a<sup>3</sup> + b<sup>3</sup>:</p>
+        <ol>
+            <li>Find the cube roots: find a and b</li>
+            <li>Write the first binomial: (a + b)</li>
+            <li>For the trinomial: (a<sup>2</sup> - ab + b<sup>2</sup>)</li>
+            <li>Answer: (a + b)(a<sup>2</sup> - ab + b<sup>2</sup>)</li>
+        </ol>
+        
+        <div class="example-box">
+            <h4>Sum of Cubes Example</h4>
+            <p>Factor x<sup>3</sup> + 8</p>
+            <p><strong>Step 1:</strong> Cube root of x<sup>3</sup> = x and cube root of 8 = 2</p>
+            <p><strong>Step 2:</strong> First binomial: (x + 2)</p>
+            <p><strong>Step 3:</strong> Trinomial: (x<sup>2</sup> - 2x + 4)</p>
+            <ul>
+                <li>a<sup>2</sup> = x<sup>2</sup></li>
+                <li>ab = x × 2 = 2x (we put minus here)</li>
+                <li>b<sup>2</sup> = 2<sup>2</sup> = 4</li>
+            </ul>
+            <p><strong>Step 4:</strong> x<sup>3</sup> + 8 = (x + 2)(x<sup>2</sup> - 2x + 4)</p>
+        </div>
+        
+        <h3>How to Factor Using Difference of Cubes</h3>
+        <p>For a<sup>3</sup> - b<sup>3</sup>:</p>
+        <ol>
+            <li>Find the cube roots: find a and b</li>
+            <li>Write the first binomial: (a - b)</li>
+            <li>For the trinomial: (a<sup>2</sup> + ab + b<sup>2</sup>) ← Note: plus signs here</li>
+            <li>Answer: (a - b)(a<sup>2</sup> + ab + b<sup>2</sup>)</li>
+        </ol>
+        
+        <div class="example-box">
+            <h4>Difference of Cubes Example</h4>
+            <p>Factor 27m<sup>3</sup> - 64</p>
+            <p><strong>Step 1:</strong> Cube root of 27m<sup>3</sup> = 3m and cube root of 64 = 4</p>
+            <p><strong>Step 2:</strong> First binomial: (3m - 4)</p>
+            <p><strong>Step 3:</strong> Trinomial: (9m<sup>2</sup> + 12m + 16)</p>
+            <ul>
+                <li>a<sup>2</sup> = (3m)<sup>2</sup> = 9m<sup>2</sup></li>
+                <li>ab = 3m × 4 = 12m (plus here!)</li>
+                <li>b<sup>2</sup> = 4<sup>2</sup> = 16</li>
+            </ul>
+            <p><strong>Step 4:</strong> 27m<sup>3</sup> - 64 = (3m - 4)(9m<sup>2</sup> + 12m + 16)</p>
+        </div>
+        
+        <div class="practice-box">
+            <h4>Practice Problem</h4>
+            <p>
+                Factor each polynomial using SDOTC:
+            </p>
+            <ol type="a">
+                <li>a<sup>3</sup> + 27</li>
+                <li>b<sup>3</sup> - 125</li>
+                <li>8x<sup>3</sup> + 1</li>
+            </ol>
+        </div>
     </div>
-
+    
+    <hr>
+    
     <div id="method-pst">
-
+        <h2>Method 4: Perfect Square Trinomials (PST)</h2>
+        
+        <h3>What is a Perfect Square Trinomial?</h3>
+        <p class="desc">
+            A perfect square trinomial is when a binomial is squared. It follows a pattern:
+        </p>
+        <ul>
+            <li>(a + b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup></li>
+            <li>(a - b)<sup>2</sup> = a<sup>2</sup> - 2ab + b<sup>2</sup></li>
+        </ul>
+        <p>
+            When factoring, we reverse this process to find the original binomial.
+        </p>
+        
+        <h3>Recognizing PST</h3>
+        <p class="desc">Look for:</p>
+        <ol>
+            <li>First term is a perfect square</li>
+            <li>Last term is a perfect square</li>
+            <li>Middle term equals 2 × square root of first × square root of last</li>
+        </ol>
+        
+        <div class="example-box">
+            <h4>Recognizing PST</h4>
+            <p>Is x<sup>2</sup> + 6x + 9 a perfect square trinomial?</p>
+            <ul>
+                <li>First term: x<sup>2</sup> → square root is x ✓</li>
+                <li>Last term: 9 → square root is 3 ✓</li>
+                <li>Middle check: 2 × x × 3 = 6x → matches! ✓</li>
+            </ul>
+            <p>This IS a perfect square trinomial!</p>
+        </div>
+        
+        <h3>How to Factor PST</h3>
+        <ol>
+            <li>Take the square root of the first term</li>
+            <li>Take the square root of the last term</li>
+            <li>Determine the sign from the middle term</li>
+            <li>Write as (a ± b)<sup>2</sup></li>
+        </ol>
+        
+        <div class="example-box">
+            <h4>PST Factoring Examples</h4>
+            <p><strong>Example 1:</strong> x<sup>2</sup> + 8x + 16</p>
+            <ul>
+                <li>Square root of x<sup>2</sup> = x</li>
+                <li>Square root of 16 = 4</li>
+                <li>Middle term is positive: +8x</li>
+                <li>Answer: (x + 4)<sup>2</sup></li>
+            </ul>
+            <p><strong>Example 2:</strong> 4a<sup>2</sup> - 12a + 9</p>
+            <ul>
+                <li>Square root of 4a<sup>2</sup> = 2a</li>
+                <li>Square root of 9 = 3</li>
+                <li>Middle term is negative: -12a</li>
+                <li>Check: 2 × 2a × 3 = 12a ✓</li>
+                <li>Answer: (2a - 3)<sup>2</sup></li>
+            </ul>
+        </div>
+        
+        <div class="practice-box">
+            <h4>Practice Problem</h4>
+            <p>
+                Factor each polynomial if it's a perfect square trinomial:
+            </p>
+            <ol type="a">
+                <li>m<sup>2</sup> + 10m + 25</li>
+                <li>4b<sup>2</sup> - 4b + 1</li>
+                <li>x<sup>2</sup> + 5x + 4 (Is this PST?)</li>
+            </ol>
+        </div>
     </div>
-
+    
+    <hr>
+    
     <div id="method-qt">
-
+        <h2>Method 5: Quadratic Trinomials (QT)</h2>
+        
+        <h3>What are Quadratic Trinomials?</h3>
+        <p class="desc">
+            A quadratic trinomial is a polynomial with three terms in the form 
+            ax<sup>2</sup> + bx + c where a, b, and c are numbers.
+        </p>
+        <p>
+            When we can't use the other methods, we use the quadratic trinomial method.
+        </p>
+        
+        <h3>The AC Method (Most Reliable)</h3>
+        <p><strong>Step 1:</strong> Multiply a × c</p>
+        <p><strong>Step 2:</strong> Find two numbers that multiply to give ac and add to give b</p>
+        <p><strong>Step 3:</strong> Rewrite the middle term using these two numbers</p>
+        <p><strong>Step 4:</strong> Factor by grouping</p>
+        
+        <div class="example-box">
+            <h4>AC Method - Simple Example</h4>
+            <p>Factor x<sup>2</sup> + 5x + 6</p>
+            <p><strong>Step 1:</strong> a = 1, c = 6 → a × c = 6</p>
+            <p><strong>Step 2:</strong> We need two numbers that:</p>
+            <ul>
+                <li>Multiply to give 6: (1,6), (2,3)</li>
+                <li>Add to give 5 (the b value): 2 + 3 = 5 ✓</li>
+            </ul>
+            <p><strong>Step 3:</strong> Rewrite: x<sup>2</sup> + 2x + 3x + 6</p>
+            <p><strong>Step 4:</strong> Factor by grouping:</p>
+            <ul>
+                <li>Group 1: x<sup>2</sup> + 2x = x(x + 2)</li>
+                <li>Group 2: 3x + 6 = 3(x + 2)</li>
+                <li>Combined: (x + 2)(x + 3)</li>
+            </ul>
+        </div>
+        
+        <div class="example-box">
+            <h4>AC Method - More Complex</h4>
+            <p>Factor 2x<sup>2</sup> + 7x + 3</p>
+            <p><strong>Step 1:</strong> a = 2, c = 3 → a × c = 6</p>
+            <p><strong>Step 2:</strong> Two numbers that multiply to 6 and add to 7:</p>
+            <ul>
+                <li>Pairs: (1,6), (2,3)</li>
+                <li>1 + 6 = 7 ✓</li>
+            </ul>
+            <p><strong>Step 3:</strong> Rewrite: 2x<sup>2</sup> + 1x + 6x + 3</p>
+            <p><strong>Step 4:</strong> Factor by grouping:</p>
+            <ul>
+                <li>Group 1: 2x<sup>2</sup> + 1x = x(2x + 1)</li>
+                <li>Group 2: 6x + 3 = 3(2x + 1)</li>
+                <li>Combined: (2x + 1)(x + 3)</li>
+            </ul>
+            <p>Check: (2x + 1)(x + 3) = 2x<sup>2</sup> + 6x + x + 3 = 2x<sup>2</sup> + 7x + 3 ✓</p>
+        </div>
+        
+        <h3>When the Leading Coefficient is 1</h3>
+        <p class="desc">
+            When a = 1 (so we have x<sup>2</sup> + bx + c), we can use a simpler method:
+        </p>
+        <p>
+            Find two numbers that multiply to c and add to b.
+        </p>
+        
+        <div class="example-box">
+            <h4>Simple Trinomial Factoring</h4>
+            <p>Factor x<sup>2</sup> - 7x + 10</p>
+            <p>We need two numbers that:</p>
+            <ul>
+                <li>Multiply to 10: (1,10), (2,5)</li>
+                <li>Add to -7: -2 + (-5) = -7 ✓</li>
+            </ul>
+            <p>Answer: (x - 2)(x - 5)</p>
+        </div>
+        
+        <div class="practice-box">
+            <h4>Practice Problem</h4>
+            <p>
+                Factor each quadratic trinomial:
+            </p>
+            <ol type="a">
+                <li>x<sup>2</sup> + 7x + 12</li>
+                <li>2x<sup>2</sup> + 11x + 5</li>
+                <li>x<sup>2</sup> - 6x + 8</li>
+            </ol>
+        </div>
     </div>
-
+    
+    <hr>
+    
     <div id="strategy">
-
+        <h2>Putting It All Together: Factoring Strategy</h2>
+        
+        <p>
+            When you see a polynomial to factor, follow these steps:
+        </p>
+        
+        <ol>
+            <li><strong>Always check for GCF first!</strong> If there's a common factor, pull it out.</li>
+            <li><strong>Count the terms:</strong>
+                <ul>
+                    <li>2 terms? Check for DOTS or SDOTC</li>
+                    <li>3 terms? Check for PST or use QT method</li>
+                    <li>4+ terms? Try factoring by grouping</li>
+                </ul>
+            </li>
+            <li><strong>After factoring, check if you can factor again.</strong> Sometimes a factor can be factored further!</li>
+        </ol>
+        
+        <div class="example-box">
+            <h4>Complete Factoring Example</h4>
+            <p>Factor completely: 2x<sup>3</sup> - 50x</p>
+            <p><strong>Step 1:</strong> GCF → 2x(x<sup>2</sup> - 25)</p>
+            <p><strong>Step 2:</strong> We have (x<sup>2</sup> - 25) with 2 terms. Is this DOTS?</p>
+            <ul>
+                <li>x<sup>2</sup> is a perfect square ✓</li>
+                <li>25 is a perfect square ✓</li>
+                <li>Minus sign ✓</li>
+            </ul>
+            <p><strong>Step 3:</strong> Factor DOTS: (x - 5)(x + 5)</p>
+            <p><strong>Final Answer:</strong> 2x(x - 5)(x + 5)</p>
+        </div>
+        
+        <div class="practice-box">
+            <h4>Practice Problem</h4>
+            <p>
+                Factor each polynomial completely:
+            </p>
+            <ol type="a">
+                <li>3a<sup>2</sup> - 27</li>
+                <li>x<sup>3</sup> + 6x<sup>2</sup> + 9x</li>
+                <li>4b<sup>4</sup> - 16b<sup>2</sup></li>
+            </ol>
+        </div>
     </div>
-
+    
+    <hr>
+    
     <div id="practice">
-
+        <h2>Practice Review Problems</h2>
+        
+        <p><strong>Directions:</strong> Factor each polynomial completely. State which method(s) you used.</p>
+        
+        <ol>
+            <li>6x + 12</li>
+            <li>a<sup>2</sup> - 49</li>
+            <li>x<sup>2</sup> + 10x + 25</li>
+            <li>2x<sup>2</sup> + 5x + 2</li>
+            <li>m<sup>3</sup> - 27</li>
+            <li>5x<sup>2</sup> - 20x</li>
+            <li>9x<sup>2</sup> - 1</li>
+            <li>x<sup>2</sup> - 8x + 12</li>
+            <li>a<sup>3</sup> + 125</li>
+            <li>6x<sup>3</sup> + 12x<sup>2</sup> + 6x</li>
+        </ol>
     </div>
-
+    
+    <hr>
+    
     <div id="answer-key">
-
+        <h2>Answer Key</h2>
+        
+        <ol>
+            <li>6x + 12 = 6(x + 2) [GCF]</li>
+            <li>a<sup>2</sup> - 49 = (a + 7)(a - 7) [DOTS]</li>
+            <li>x<sup>2</sup> + 10x + 25 = (x + 5)<sup>2</sup> [PST]</li>
+            <li>2x<sup>2</sup> + 5x + 2 = (2x + 1)(x + 2) [QT]</li>
+            <li>m<sup>3</sup> - 27 = (m - 3)(m<sup>2</sup> + 3m + 9) [SDOTC]</li>
+            <li>5x<sup>2</sup> - 20x = 5x(x - 4) [GCF]</li>
+            <li>9x<sup>2</sup> - 1 = (3x + 1)(3x - 1) [DOTS]</li>
+            <li>x<sup>2</sup> - 8x + 12 = (x - 2)(x - 6) [QT]</li>
+            <li>a<sup>3</sup> + 125 = (a + 5)(a<sup>2</sup> - 5a + 25) [SDOTC]</li>
+            <li>6x<sup>3</sup> + 12x<sup>2</sup> + 6x = 6x(x<sup>2</sup> + 2x + 1) = 6x(x + 1)<sup>2</sup> [GCF, then PST]</li>
+        </ol>
     </div>
-
+    
+    <hr>
+    
+    <nav>
+        <a href="../../index.html">Back to Home</a> |
+        <a href="index.html">Mathematics Table Of Content</a>
+    </nav>
 </body>
 </html>
