@@ -3,9 +3,573 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Systems of Linear Equation</title>
 </head>
 <body>
-    
+    <h1>Systems of Linear Equations Reviewer</h1>
+    <p class="subtitle"> Grade 8 Mathematics</p>
+    <hr>
+
+    <div id="intro-sys">
+        <h2>1. Understanding Systems of Linear Equations</h2>
+        <p>
+            A system of linear equations is when we have two or more equations with the same variables, and
+            we need to find values that satisfy ALL equations at the same time.
+        </p>
+
+        <p>
+            A <b>solution</b> to a system is a point (or pair of values) where both equations are true
+        </p>
+
+        <div class="desc">
+            <b>What is a system?</b>
+            <p>
+                System of equations
+                <br>
+                <br>
+                y = 2x + 1
+                <br>
+                <br>
+                y = -x + 4
+                <br>
+                <br>
+                We need to find the values of x and y that make BOTH equations true at the same time.
+                <br>
+                <br>
+                The solution is (x,y) = (1,3) because:
+
+            <ul>
+                <li>First equation: 3 = 2(1) + 1 ✓ True</li>
+                <li>Second equation: 3 = -(1) + 4 ✓ True</li>
+            </ul>
+        </div>
+        <h2>1.1 Types of Solutions</h2>
+        </p>
+        A system of equations can have:
+        <ul>
+            <li><b>One solution:</b> The lines intersect at exactly one point</li>
+            <li><b>No solution:</b> The lines are parallel (never intersect) </li>
+            <li><b>Infinite solutions:</b> The lines are the same (identical equations)</li>
+        </ul>
+        </p>
+    </div>
+    <hr>
+
+    <div id="method1-sys">
+        <h2>2. Method 1: Substitution Method</h2>
+        <p>
+            The substitution method works by solving one equation for one variable, then substituting that expression
+            into the other equation.
+        </p>
+        <h3>2.1 Steps for Substitution</h3>
+        <p>
+        <ol>
+            <li>Choose an equation and solve for one variable</li>
+            <li>Substitute that expression into the other equation</li>
+            <li>Solve for the remaining variabke</li>
+            <li>Substitute back to find the other varibale</li>
+            <li>Write the solution as an ordered pair (x,y)</li>
+            <li>Check your solution in both original equations</li>
+        </ol>
+        </p>
+        <div class="example-box">
+            <b>Substitution example 1</b>
+            <p>
+                Solve the system:<br>
+                y = x + 2<br><br>
+                2x + y = 8
+            </p>
+            <p>
+                <b>Step 1:</b> The first equation is already solved for y: y = x + 2
+                <b>Step 2:</b> Substitute into the second equation:<br><br>
+                2x + ( x + 2 ) = 8<br><br>
+                <b>Step 3:</b> Solve for x:<br><br>
+                2x + x + 2 = 8<br><br>
+                3x + 2 = 8<br><br>
+                3x = 6<br><br>
+                x = 2
+            </p>
+            <p>
+                <b>Step 4:</b> Find y by substituting x = 2 into the first equation: <br><br>
+                y = 2 + 2 = 4 <br><br>
+                <b>Step 5:</b> Solution (2,4) <br><br>
+                <b>Step 6:</b> Check:
+            <ul>
+                <li>Equation 1: 4 = 2+2</li>
+                <li>Equation 2: 2(2) + 4 = 4 + 4 = 8</li>
+            </ul>
+            </p>
+        </div>
+
+        <div class="example-box">
+            <b>Substitution Example 2</b>
+            <p>
+                Solve the system: <br><br>
+                x + y = 5 <br><br>
+                2x - y = 4 <br><br>
+                <b>Step 1:</b> Solve the first equation for y: <br><br>
+                x + y = 5 <br> <br>
+                y = 5 - x <br> <br>
+                <b>Step 2:</b> Substitute into the second question: <br> <br>
+                2x - (5 - x) = 4 <br><br>
+                <b>Step 3:</b> Solve for x: <br><br>
+                2x - 5 + x = 4 <br> <br>
+                3x - 5 = 4 <br><br>
+                3x = 9 <br> <br>
+                x = 3 <br> <br>
+                <b>Step 4:</b> Find y: <br> <br>
+                y = 5-3 = 2 <br> <br>
+                <b>Step 5:</b> Solution: (3, 2) <br><br>
+                <b>Step 6:</b> Check:
+            <ul>
+                <li>Equation 1: 3 + 2 = 5</li>
+                <li>Equation 2: 2(3) - 2 = 6 - 2 = 4 </li>
+            </ul>
+            </p>
+        </div>
+
+        <div class="practice-box">
+            <p>
+                <b>Practice Problem</b> <br><br>
+                Solve each system using substitution:
+            <ol type=a>
+                <li>y = 2x and x + y = 9</li>
+                <li>x = y - 3 and 2x + y = 12</li>
+                <li>y = -x + 5 and 3x + y = 11</li>
+            </ol>
+            </p>
+        </div>
+        <hr>
+    </div>
+
+    <div id="method2-sys">
+        <h2>3. Method 2: Elimination Method</h2>
+        <p>
+            The elimination method works by adding or subtracting equations to <b>eliminate</b> one variable making it
+            easier to solve.
+        </p>
+        <h3>3.1 Steps for Elimination</h3>
+        <ol>
+            <li>Arrange both equations in standard form (ax + by = c)</li>
+            <li>Look for a way to make one variable's coefficients opposites</li>
+            <li>Multiply one or both equations by a number if needed</li>
+            <li>Add the equations together to eliminate one variable</li>
+            <li>Solve for the remaining variable</li>
+            <li>Substitute back to find the other variable</li>
+            <li>Check your solution in both original equations</li>
+        </ol>
+        <div class="example-box">
+            <p>
+                <b>Elimination Example 1 - Variables Already Opposites</b> <br><br>
+                Solve the system: <br><br>
+                2x + y = 7 <br> <br>
+                2x - y = 5 <br> <br>
+                <b>Step 1:</b> Already in standard form <br><br>
+                <b>Step 2-3:</b> Notice that y and -y are opposites! No multiplication needed. <br><br>
+                <b>Step 4:</b> Add the equations: <br><br>
+                (2x + y) + (2x - y) = 7 + 5 <br><br>
+                4x = 12 <br> <br>
+                <b>Step 5:</b> Solve for x: <br><br>
+                x = 3 <br><br>
+                <b>Step 6:</b> Substitute into the first equation <br><br>
+                2(3) + y = 7 <br><br>
+                6 + y = 7 <br><br>
+                y = 1 <br><br>
+                <b>Solution:</b> (3,1) <br><br>
+                <b>Step 7:</b> Check:
+            <ul>
+                <li>Equation 1: 2(3) + 1 = 6 + 1 = 7</li>
+                <li>Equation 2: 2(3) - 1 = 6 - 1 = 5</li>
+            </ul>
+            </p>
+        </div>
+        <div class="example-box">
+            <p>
+                <b>Elimination Example 2 - Need to Multiply</b> <br><br>
+                Solve the system: <br><br>
+                3x + 2y = 11 <br><br>
+                x + 2 y = 7 <br><br>
+                <b>Step 1:</b> Already in Standard Form <br><br>
+                <b>Step 2:</b> To eliminate x, multiply the second term to make x coefficients opposites: <br><br>
+                Equation 1: 3x + 2y = 11 <br><br>
+                Equation 2 (multiplied by -3): -3x - 6x = -21 <br><br>
+                <b>Step 3:</b> Multiplying Done <br><br>
+                <b>Step 4:</b> Add the equations: <br><br>
+                (3x + 2y) + (-3x - 6y) = 11 + (-21) <br><br>
+                -4y = 10 <br><br>
+                <b>Step 5 solve for y:</b> <br><br>
+                y = <sup>-10</sup>&frasl;<sub>-4</sub> = <sup>10</sup>&frasl;<sub>4</sub> =
+                <sup>5</sup>&frasl;<sub>2</sub> = 2.5 <br><br>
+                <b>Step 6:</b> Substitute into equation 2: <br><br>
+                x + 2(2.5) = 7 <br><br>
+                x + 5 = 7 <br><br>
+                x = 2 <br><br>
+                <b>Solution</b> (2, 2.5) <br><br>
+                <b>Step 7:</b> Check:
+            <ul>
+                <li>Equation 1: 3(2) + 2(2.5) = 6 + 5 = 11</li>
+                <li>Equation 2: 2 + 2(2.5) = 2 + 5 = 7</li>
+            </ul>
+            </p>
+        </div>
+        <div class="example-box">
+            <p>
+                <b>Elimination Example 3 - Multiply Both Equations</b> <br><br>
+                2x + 3y = 8 <br><br>
+                3x + 2y = 7 <br><br>
+                <b>Step 1:</b> Already in standard form <br><br>
+                <b>Step 2-3:</b> To eliminate x:
+            <ul>
+                <li>Multiply first equation by 3: 6x + 9y = 24</li>
+                <li>Multiply second equation by -2: 6x - 4y = -14</li> <br><br>
+            </ul>
+            <b>Step 4:</b> Add equations: <br><br>
+            (6x + 9y) + (-6x - 4y) = 24 + (-14) <br><br>
+            5y = 10
+            <b>Step 5:</b> Solve for y: <br><br>
+            y = 2 <br><br>
+            <b>Step 6"</b> Substitute into the first equation: <br><br>
+            2x + 3(2) = 8 <br><br>
+            2x + 6 = 8 <br><br>
+            2x = 2 <br><br>
+            x = 1 <br><br>
+            <b>Solution: (1,2)</b> <br><br>
+            <b>Step 7:</b> Check:
+            <ul>
+                <li>Equation 1: 2(1) + 3(2) = 2 + 6 = 8</li>
+                <li>Equation 2: 3(1) + 2(2) = 3 + 4 = 7</li>
+            </ul>
+            </p>
+        </div>
+        <div class="practice-box">
+            <p>
+                <b>Practice Problem</b> <br><br>
+                Solve each system using elimination:
+            <ol type="a">
+                <li>x + y = 10 and x - y = 4</li>
+                <li>2x + y = 7 and x - y = 2</li>
+                <li>2x + 3y = 13 and x + 2y = 8</li>
+            </ol>
+            </p>
+        </div>
+        <hr>
+        <div id="method3-sys">
+            <p>
+            <h2>4. Method 3: Graphing Method</h2>
+            The graphing method Involves plotting both equations on a coordinate plane. The point(s) where the lines
+            intersect is the solution <br><br>
+            <h3>4.1 Steps for Graphing</h3>
+            <ol>
+                <li>Rewrite both equations in slope intersept form: y = mx + b</li>
+                <li>Identify slope (m) and y-intercept (b) for each</li>
+                <li>Plot both lines on the same graph</li>
+                <li>Find the intersection point(s)</li>
+                <li>The intersection point (x,y) is your solution</li>
+            </ol>
+            </p>
+            <div class="example-box">
+                <p>
+                    <b>Graphing Example</b> <br><br>
+                    Solve the system by graphing: <br><br>
+                    y = 2x - 1 <br><br>
+                    y = -x + 2 <br><br>
+                    <b>Step 1:</b> Both Equations are already in slope-intercept form <br><br>
+                    <b>Step 2:</b>
+                <ul>
+                    <li>First line: m = 2, b = -1 (slope is 2, y intercept is -1)</li>
+                    <li>Second line: m = -1, b = 2 (slope is -1, y intercept is 2) </li>
+                </ul>
+                <b>Step 3:</b> Plot the lines
+                <ul>
+                    <li>First line passes through (0, -1) and (1,1) </li>
+                    <li>Second line passes through (0,2) and (1,1)</li>
+                </ul>
+                <b>Step 4-5:</b> The lines intersect at the point (1,1) <br><br>
+                <b>Solution:</b> (1,1) <br><br>
+                <b>Verify:</b>
+                <ul>
+                    <li>Equation 1: 1 = 2(1) - 1 = 1</li>
+                    <li>Equation 2: 1 = -(1) + 2 = 1</li>
+                </ul>
+                </p>
+            </div>
+            <h3>4.2 Converting to Slope-Intercept Form</h3>
+            <p>
+                If your equations aren't in y = mx + b form, solve for y first.
+            </p>
+            <div class="example-box">
+                <b>Converting to Slope-Intercept Form</b>
+                <p>
+                    Converting 2x + y = 5 to slope-intercept form: <br><br>
+                    2x + y = 5 <br><br>
+                    y = -2x + 5 <br><br>
+                    Now we can see m = -2 and b = 5
+                </p>
+            </div>
+            <div class="practice-box">
+                <b>Practice Problem</b>
+                <p>
+                    Solve each system by graphing (describe the intersection):
+                <ol type="a">
+                    <li>y = x and y = -x + 2</li>
+                    <li>y = 2x + 1 and y = x - 1</li>
+                </ol>
+                </p>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <div id="word-problems">
+        <h2>5. Word Problems Using Systems</h2>
+        <p>
+            Many real-world situations involve systems of equations. The key is translating English into mathematical
+            equations.
+        </p>
+
+        <h3>5.1 Steps to Solve Word Problems</h3>
+        <ol>
+            <li>Define your variables (say what x and y represent)</li>
+            <li>Write two equations based on the problem</li>
+            <li>Solve the system using substitution or elimination</li>
+            <li>Check that your answer makes sense in the context</li>
+            <li>Write your answer in a complete sentence</li>
+        </ol>
+
+        <div class="example-box">
+            <b>Word Problem 1: Purchase Problem</b>
+            <p>
+                Maria bought 3 notebooks and 2 pens for $13. James bought 2 notebooks and 4 pens for $16. Find the price
+                of each item.
+                <br><br>
+                <b>Step 1:</b> Define variables
+            </p>
+            <ul>
+                <li>Let x = price of one notebook</li>
+                <li>Let y = price of one pen</li>
+            </ul>
+            <p>
+                <b>Step 2:</b> Write equations
+            </p>
+            <ul>
+                <li>Maria's purchase: 3x + 2y = 13</li>
+                <li>James's purchase: 2x + 4y = 16</li>
+            </ul>
+            <p>
+                <b>Step 3:</b> Solve using elimination<br><br>
+                Multiply first equation by -2 and second by 3:
+            </p>
+            <ul>
+                <li>-6x - 4y = -26</li>
+                <li>6x + 12y = 48</li>
+            </ul>
+            <p>
+                Add them: 8y = 22, so y = 2.75<br><br>
+                Substitute: 3x + 2(2.75) = 13<br><br>
+                3x + 5.5 = 13<br>
+                3x = 7.5<br>
+                x = 2.5<br><br>
+                <b>Step 4:</b> Check: Does this make sense?<br>
+                3 notebooks (3 × $2.50 = $7.50) plus 2 pens (2 × $2.75 = $5.50) = $13 ✓<br><br>
+                <b>Step 5:</b> Answer: <b>A notebook costs $2.50 and a pen costs $2.75.</b>
+            </p>
+        </div>
+
+        <div class="example-box">
+            <b>Word Problem 2: Number Problem</b>
+            <p>
+                The sum of two numbers is 24. The difference between them is 6. Find the numbers.
+                <br><br>
+                <b>Step 1:</b> Define variables
+            </p>
+            <ul>
+                <li>Let x = the larger number</li>
+                <li>Let y = the smaller number</li>
+            </ul>
+            <p>
+                <b>Step 2:</b> Write equations
+            </p>
+            <ul>
+                <li>Sum: x + y = 24</li>
+                <li>Difference: x - y = 6</li>
+            </ul>
+            <p>
+                <b>Step 3:</b> Solve using elimination<br><br>
+                Add the equations:<br>
+                (x + y) + (x - y) = 24 + 6<br>
+                2x = 30<br>
+                x = 15<br><br>
+                Substitute: 15 + y = 24, so y = 9<br><br>
+                <b>Step 4:</b> Check:
+            </p>
+            <ul>
+                <li>Sum: 15 + 9 = 24 ✓</li>
+                <li>Difference: 15 - 9 = 6 ✓</li>
+            </ul>
+            <p>
+                <b>Step 5:</b> Answer: <b>The two numbers are 15 and 9.</b>
+            </p>
+        </div>
+
+        <div class="example-box">
+            <b>Word Problem 3: Distance/Rate/Time</b>
+            <p>
+                A fast train and a slow train leave the same station. The fast train travels at 80 mph and the slow
+                train at 60 mph. How long before they are 150 miles apart?
+                <br><br>
+                <b>Step 1:</b> Define variables
+            </p>
+            <ul>
+                <li>Let t = time (in hours)</li>
+                <li>Let d<sub>f</sub> = distance traveled by fast train</li>
+                <li>Let d<sub>s</sub> = distance traveled by slow train</li>
+            </ul>
+            <p>
+                <b>Step 2:</b> Write equations
+            </p>
+            <ul>
+                <li>Fast train distance: d<sub>f</sub> = 80t</li>
+                <li>Slow train distance: d<sub>s</sub> = 60t</li>
+                <li>Difference in distance: d<sub>f</sub> - d<sub>s</sub> = 150</li>
+            </ul>
+            <p>
+                <b>Step 3:</b> Substitute and solve<br><br>
+                80t - 60t = 150<br>
+                20t = 150<br>
+                t = 7.5<br><br>
+                <b>Step 4:</b> Check: Fast train goes 80 × 7.5 = 600 miles. Slow train goes 60 × 7.5 = 450 miles.
+                Difference = 150 ✓<br><br>
+                <b>Step 5:</b> Answer: <b>After 7.5 hours, the trains will be 150 miles apart.</b>
+            </p>
+        </div>
+
+        <div class="practice-box">
+            <b>Practice Problem</b>
+            <p>
+                Solve these word problems:
+            </p>
+            <ol type="a">
+                <li>The sum of two numbers is 20. One number is 4 more than the other. Find the numbers.</li>
+                <li>Tickets cost $5 for adults and $3 for children. If 40 tickets were sold for a total of $160, how
+                    many adult tickets and how many children's tickets were sold?</li>
+                <li>A rectangle has a perimeter of 36 inches. The length is 2 inches more than the width. Find the
+                    dimensions.</li>
+            </ol>
+        </div>
+    </div>
+    <hr>
+
+    <div id="choosing-method">
+        <h2>6. Choosing the Best Method</h2>
+        <ul>
+            <li><b>Substitution:</b> Best when one equation is already solved for a variable or easily solved</li>
+            <li><b>Elimination:</b> Best when coefficients are easy to work with or already opposites</li>
+            <li><b>Graphing:</b> Best for visual understanding or when checking solutions</li>
+        </ul>
+    </div>
+    <hr>
+
+    <div id="review-problems">
+        <h2>7. Review Problems</h2>
+        <p>Solve each system using the indicated method.</p>
+
+        <h3>Substitution Method:</h3>
+        <ol>
+            <li>y = 2x - 3 and x + y = 6</li>
+            <li>x = y + 2 and 2x - y = 7</li>
+        </ol>
+
+        <h3>Elimination Method:</h3>
+        <ol>
+            <li>2x + y = 5 and x - y = 1</li>
+            <li>3x + 2y = 12 and x - 2y = 4</li>
+        </ol>
+
+        <h3>Graphing Method:</h3>
+        <ol>
+            <li>y = x + 1 and y = -x + 3</li>
+            <li>y = 2x - 2 and y = -x + 4</li>
+        </ol>
+
+        <h3>Word Problems:</h3>
+        <ol>
+            <li>Two numbers have a sum of 30 and a difference of 8. Find the numbers.</li>
+            <li>A store sells apples for $2 each and oranges for $3 each. If you buy 8 pieces of fruit for $20, how
+                many apples and how many oranges did you buy?</li>
+            <li>The length of a rectangle is 5 inches more than its width. If the perimeter is 50 inches, find the
+                length and width.</li>
+        </ol>
+    </div>
+    <hr>
+
+    <div id="answer-key">
+        <h2>8. Answer Key</h2>
+
+        <h3>Substitution:</h3>
+        <div class="answer-section">
+            <p>
+                <b>1.</b> (3, 3) - Substitute y = 2x - 3 into x + y = 6 to get x + 2x - 3 = 6, so 3x = 9, x = 3, y = 3
+            </p>
+        </div>
+
+        <div class="answer-section">
+            <p>
+                <b>2.</b> (5, 3) - Substitute x = y + 2 into 2x - y = 7 to get 2(y + 2) - y = 7 ⇒ 2y + 4 - y = 7 ⇒ y =
+                3, then x = 5
+            </p>
+        </div>
+
+        <h3>Elimination:</h3>
+        <div class="answer-section">
+            <p>
+                <b>3.</b> (2, 1) - Add equations: 3x = 6, so x = 2. Substitute: 2 + y = 5, y = 1
+            </p>
+        </div>
+
+        <div class="answer-section">
+            <p>
+                <b>4.</b> (4, 0) - Add equations: 4x = 16, so x = 4. Substitute: 3(4) + 2y = 12, so y = 0
+            </p>
+        </div>
+
+        <h3>Graphing:</h3>
+        <div class="answer-section">
+            <p>
+                <b>5.</b> (1, 2) - Lines intersect where x + 1 = -x + 3, so 2x = 2, x = 1, y = 2
+            </p>
+        </div>
+
+        <div class="answer-section">
+            <p>
+                <b>6.</b> (2, 2) - Lines intersect where 2x - 2 = -x + 4, so 3x = 6, x = 2, y = 2
+            </p>
+        </div>
+
+        <h3>Word Problems:</h3>
+        <div class="answer-section">
+            <p>
+                <b>7.</b> Answer: <b>The numbers are 19 and 11.</b><br>
+            </p>
+        </div>
+
+        <div class="answer-section">
+            <p>
+                <b>8.</b> Answer: <b>4 apples and 4 oranges</b><br>
+            </p>
+        </div>
+
+        <div class="answer-section">
+            <p>
+                <b>9.</b> Answer: <b>Length is 15 inches, width is 10 inches</b><br>
+            </p>
+        </div>
+    </div>
+
+    <hr>
+    <nav>
+        <a href="../../index.html">Back to Home</a>
+        <a href="index.html">Mathematics Table Of Content</a>
+    </nav>
 </body>
+
 </html>
