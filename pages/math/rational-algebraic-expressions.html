@@ -1,11 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rational Algebraic Expressions</title>
+    </head>
+    <body>
+        <h1>Rational Algebraic Expressions Reviewer</h1>
+        <p class="subtitle">Grade 8 Mathematics</p>
+        <hr>
+
+        <div id="intro">
+            <h2>What Are Rational Algebraic Expressions?</h2>
+
+            <p>
+            A rational algebraic expression is a fraction where the numerator and/or denominator contain variables. Think of it like a regular fraction, but with algebra instead of just numbers.
+            </p>
+
+            <div class="example-box">
+                <h4>Examples of Rational Expressions</h4>
+                <ul>
+                    <li>3/x — numerator is a number, denominator has variable</li>
+                    <li>(x + 2)/5 — numerator has variable, denominator is a number</li>
+                    <li>2x/(x + 3) — both numerator and denominator have variables</li>
+                    <li>(x<sup>2</sup> - 1)/(x<sup>2</sup> + 4x + 4) — polynomials in both</li>
+                </ul>
+            </div>
+
+            <h3>Important: Domain Restrictions</h3>
+            <p>
+            We can NEVER divide by zero. This means we must identify what values make the denominator equal to zero—these are not allowed.
+            </p>
+
+            <div class="example-box">
+                <h4>Finding Domain Restrictions</h4>
+                <p>For 5/(x - 2):</p>
+                <p>The denominator is zero when x - 2 = 0, so x = 2.</p>
+                <p><strong>Domain restriction:</strong> x ≠ 2</p>
+                <hr style="margin: 1em 0; border: none; border-top: 1px solid #ccc;">
+                <p>For (x + 1)/((x - 3)(x + 5)):</p>
+                <p>The denominator is zero when x = 3 or x = -5.</p>
+                <p><strong>Domain restrictions:</strong> x ≠ 3 and x ≠ -5</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="simplifying">
+            <h2>Simplifying Rational Expressions</h2>
+
+            <p>
+            Before we do any operations, we should simplify rational expressions by canceling common factors.
+            </p>
+
+            <h3>Steps to Simplify</h3>
+            <ol>
+                <li>Factor the numerator completely</li>
+                <li>Factor the denominator completely</li>
+                <li>Cancel common factors</li>
+                <li>Write the simplified expression</li>
+            </ol>
+
+            <div class="example-box">
+                <h4>Simplifying Rational Expressions</h4>
+                <p>Simplify (x<sup>2</sup> - 1)/(x + 1)</p>
+                <p><strong>Step 1:</strong> Factor the numerator: x<sup>2</sup> - 1 = (x + 1)(x - 1)</p>
+                <p><strong>Step 2:</strong> Denominator is already factored: (x + 1)</p>
+                <p><strong>Step 3:</strong> Cancel the common factor (x + 1):</p>
+                <p>((x + 1)(x - 1))/(x + 1) = x - 1</p>
+                <p><strong>Step 4:</strong> Simplified expression: x - 1 (where x ≠ -1)</p>
+                <p>Note: We still need to remember x ≠ -1 even though it cancels!</p>
+            </div>
+
+            <div class="example-box">
+                <h4>More Complex Simplification</h4>
+                <p>Simplify (6x<sup>2</sup> + 12x)/(2x)</p>
+                <p><strong>Step 1:</strong> Factor numerator: 6x<sup>2</sup> + 12x = 6x(x + 2)</p>
+                <p><strong>Step 2:</strong> Factor denominator: 2x = 2x</p>
+                <p><strong>Step 3:</strong> Cancel common factors:</p>
+                <p>(6x(x + 2))/(2x) = (3(x + 2))/1 = 3(x + 2) = 3x + 6</p>
+                <p><strong>Step 4:</strong> Simplified: 3x + 6 (where x ≠ 0)</p>
+            </div>
+
+            <div class="practice-box">
+                <h4>Practice Problem</h4>
+                <p>Simplify each rational expression. State domain restrictions.</p>
+                <ol type="a">
+                    <li>(x + 3)/(x<sup>2</sup> + 6x + 9)</li>
+                    <li>(2x<sup>2</sup> - 8)/(2x - 4)</li>
+                    <li>(x<sup>2</sup> - 4)/(x<sup>2</sup> - 5x + 6)</li>
+                </ol>
+            </div>
+        </div>
+
+        <hr>
+        
+        <div id="multiplying">
+            <h2>Multiplying Rational Expressions</h2>
+
+            <p>
+            Multiplying rational expressions works just like multiplying fractions: multiply numerators together and denominators together.
+            </p>
+
+            <h3>Steps to Multiply</h3>
+            <ol>
+                <li>Factor all numerators and denominators completely</li>
+                <li>Write as one fraction (numerators × numerators, denominators × denominators)</li>
+                <li>Cancel common factors</li>
+                <li>Simplify</li>
+            </ol>
+
+            <p><strong>Formula:</strong> A/B × C/D = (A × C)/(B × D) (where B ≠ 0 and D ≠ 0)</p>
+
+            <div class="example-box">
+                <h4>Simple Multiplication</h4>
+                <p>Multiply 3/x × x<sup>2</sup>/6</p>
+                <p><strong>Step 1:</strong> Already factored</p>
+                <p><strong>Step 2:</strong> (3 × x<sup>2</sup>)/(x × 6) = (3x<sup>2</sup>)/(6x)</p>
+                <p><strong>Step 3:</strong> Cancel common factors (3 and x):</p>
+                <p>(3x<sup>2</sup>)/(6x) = x/2</p>
+                <p><strong>Step 4:</strong> Answer: x/2 (where x ≠ 0)</p>
+            </div>
+
+            <div class="example-box">
+                <h4>Multiplication with Polynomials</h4>
+                <p>Multiply ((x + 2)/(x - 3)) × ((x<sup>2</sup> - 9)/(x<sup>2</sup> - 4))</p>
+                <p><strong>Step 1:</strong> Factor everything:</p>
+                <ul>
+                    <li>Numerator 1: (x + 2) ✓</li>
+                    <li>Denominator 1: (x - 3) ✓</li>
+                    <li>Numerator 2: (x - 3)(x + 3) [DOTS]</li>
+                    <li>Denominator 2: (x - 2)(x + 2) [QT]</li>
+                </ul>
+                <p><strong>Step 2:</strong> Write as one fraction:</p>
+                <p>((x + 2)(x - 3)(x + 3))/((x - 3)(x - 2)(x + 2))</p>
+                <p><strong>Step 3:</strong> Cancel (x + 2) and (x - 3):</p>
+                <p>(x + 3)/(x - 2)</p>
+                <p><strong>Step 4:</strong> Answer: (x + 3)/(x - 2) (where x ≠ 2, -2, 3)</p>
+            </div>
+
+            <div class="practice-box">
+                <h4>Practice Problem</h4>
+                <p>Multiply each pair of rational expressions. Simplify completely.</p>
+                <ol type="a">
+                    <li>5/a<sup>2</sup> × a<sup>3</sup>/10</li>
+                    <li>((x - 1)/(x + 4)) × ((x + 4)/(x - 1))</li>
+                    <li>((x<sup>2</sup> - 1)/(x + 3)) × ((x + 3)/(x - 1))</li>
+                </ol>
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="dividing">
+            <h2>Dividing Rational Expressions</h2>
+
+            <p>
+            Dividing rational expressions uses a special trick: <strong>flip the second fraction and multiply instead</strong>.
+            </p>
+
+            <h3>Steps to Divide</h3>
+            <ol>
+                <li>Keep the first fraction as is</li>
+                <li>Change ÷ to ×</li>
+                <li>Flip (take the reciprocal of) the second fraction</li>
+                <li>Follow the multiplication steps: factor, combine, cancel, simplify</li>
+            </ol>
+
+            <p><strong>Formula:</strong> A/B ÷ C/D = A/B × D/C (where B ≠ 0, C ≠ 0, D ≠ 0)</p>
+
+            <div class="example-box">
+                <h4>Simple Division</h4>
+                <p>Divide 4/x ÷ 2/x<sup>3</sup></p>
+                <p><strong>Step 1-2:</strong> Keep first, flip second:</p>
+                <p>4/x × x<sup>3</sup>/2</p>
+                <p><strong>Step 3:</strong> Combine:</p>
+                <p>(4 × x<sup>3</sup>)/(x × 2) = (4x<sup>3</sup>)/(2x)</p>
+                <p><strong>Step 4:</strong> Simplify (cancel 2 and x):</p>
+                <p>2x<sup>2</sup> (where x ≠ 0)</p>
+            </div>
+
+            <div class="example-box">
+                <h4>Division with Polynomials</h4>
+                <p>Divide ((x<sup>2</sup> - 1)/(x + 2)) ÷ ((x - 1)/(3x + 6))</p>
+                <p><strong>Step 1-2:</strong> Flip and change to multiply:</p>
+                <p>((x<sup>2</sup> - 1)/(x + 2)) × ((3x + 6)/(x - 1))</p>
+                <p><strong>Step 3:</strong> Factor everything:</p>
+                <ul>
+                    <li>x<sup>2</sup> - 1 = (x - 1)(x + 1) [DOTS]</li>
+                    <li>x + 2 = (x + 2)</li>
+                    <li>3x + 6 = 3(x + 2) [GCF]</li>
+                    <li>x - 1 = (x - 1)</li>
+                </ul>
+                <p>((x - 1)(x + 1))/(x + 2) × (3(x + 2))/(x - 1)</p>
+                <p><strong>Step 4:</strong> Cancel (x - 1) and (x + 2):</p>
+                <p>3(x + 1) = 3x + 3 (where x ≠ -2, 1)</p>
+            </div>
+
+            <div class="practice-box">
+                <h4>Practice Problem</h4>
+                <p>Divide each pair of rational expressions. Simplify completely.</p>
+                <ol type="a">
+                    <li>6/a ÷ 3/a<sup>2</sup></li>
+                    <li>((x + 5)/(x - 2)) ÷ ((x + 5)/(x + 3))</li>
+                    <li>((x<sup>2</sup> - 4)/(x + 1)) ÷ ((x - 2)/(2x + 2))</li>
+                </ol>
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="adding">
+            <h2>Adding Rational Expressions</h2>
+
+            <p>
+            Adding fractions with variables works the same as adding numeric fractions. We need a common denominator.
+            </p>
+
+            <h3>Case 1: Same Denominator</h3>
+            <p>When denominators are identical, just add the numerators.</p>
+            <p><strong>Formula:</strong> A/C + B/C = (A + B)/C</p>
+
+            <div class="example-box">
+                <h4>Adding with Same Denominator</h4>
+                <p>Add x/(x + 1) + 3/(x + 1)</p>
+                <p>Since both have denominator (x + 1):</p>
+                <p>(x + 3)/(x + 1) (where x ≠ -1)</p>
+            </div>
+
+            <h3>Case 2: Different Denominators</h3>
+            <p>When denominators are different, find the least common denominator (LCD).</p>
+
+            <p><strong>Steps:</strong></p>
+            <ol>
+                <li>Factor all denominators</li>
+                <li>Find the LCD (use all factors that appear, using highest powers)</li>
+                <li>Rewrite each fraction with the LCD</li>
+                <li>Add the numerators</li>
+                <li>Simplify if possible</li>
+            </ol>
+
+            <div class="example-box">
+                <h4>Different Denominators - Simple</h4>
+                <p>Add 1/(2x) + 3/(4x)</p>
+                <p><strong>Step 1-2:</strong> Factor denominators and find LCD:</p>
+                <ul>
+                    <li>First denominator: 2x = 2 · x</li>
+                    <li>Second denominator: 4x = 4 · x</li>
+                    <li>LCD = 4x (higher power of each factor)</li>
+                </ul>
+                <p><strong>Step 3:</strong> Rewrite with LCD:</p>
+                <ul>
+                    <li>First fraction: 1/(2x) = 2/(4x)</li>
+                    <li>Second fraction: Already 3/(4x)</li>
+                </ul>
+                <p><strong>Step 4:</strong> Add:</p>
+                <p>2/(4x) + 3/(4x) = 5/(4x) (where x ≠ 0)</p>
+            </div>
+
+            <div class="example-box">
+                <h4>Different Denominators - Polynomial</h4>
+                <p>Add 2/(x - 1) + 3/(x + 2)</p>
+                <p><strong>Step 1:</strong> Denominators already factored</p>
+                <p><strong>Step 2:</strong> LCD = (x - 1)(x + 2)</p>
+                <p><strong>Step 3:</strong> Rewrite each fraction:</p>
+                <ul>
+                    <li>First: (2(x + 2))/((x - 1)(x + 2)) = (2x + 4)/((x - 1)(x + 2))</li>
+                    <li>Second: (3(x - 1))/((x - 1)(x + 2)) = (3x - 3)/((x - 1)(x + 2))</li>
+                </ul>
+                <p><strong>Step 4:</strong> Add numerators:</p>
+                <p>((2x + 4) + (3x - 3))/((x - 1)(x + 2)) = (5x + 1)/((x - 1)(x + 2))</p>
+                <p><strong>Step 5:</strong> Cannot simplify further</p>
+                <p>Answer: (5x + 1)/((x - 1)(x + 2)) (where x ≠ 1, -2)</p>
+            </div>
+
+            <div class="practice-box">
+                <h4>Practice Problem</h4>
+                <p>Add each pair of rational expressions. Simplify completely.</p>
+                <ol type="a">
+                    <li>2/x + 5/x</li>
+                    <li>1/(3x) + 1/(6x)</li>
+                    <li>2/(x + 1) + 1/(x - 1)</li>
+                </ol>
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="subtracting">
+            <h2>Subtracting Rational Expressions</h2>
+
+            <p>
+            Subtracting rational expressions works the same as adding, except we subtract the numerators instead.
+            </p>
+
+            <h3>Key Point: Distribute the Negative</h3>
+            <p>When subtracting, be careful to distribute the negative sign to all terms in the second numerator.</p>
+
+            <p><strong>Formula:</strong> A/C - B/C = (A - B)/C</p>
+
+            <div class="example-box">
+                <h4>Subtracting - Same Denominator</h4>
+                <p>Subtract ((x + 2))/x - 3/x</p>
+                <p>((x + 2) - 3)/x = (x - 1)/x (where x ≠ 0)</p>
+            </div>
+
+            <div class="example-box">
+                <h4>Subtracting - Different Denominators</h4>
+                <p>Subtract x/(x + 1) - 2/(x + 2)</p>
+                <p><strong>Step 1-2:</strong> LCD = (x + 1)(x + 2)</p>
+                <p><strong>Step 3:</strong> Rewrite:</p>
+                <ul>
+                    <li>First: (x(x + 2))/((x + 1)(x + 2)) = (x<sup>2</sup> + 2x)/((x + 1)(x + 2))</li>
+                    <li>Second: (2(x + 1))/((x + 1)(x + 2)) = (2x + 2)/((x + 1)(x + 2))</li>
+                </ul>
+                <p><strong>Step 4:</strong> Subtract (distribute the negative!):</p>
+                <p>((x<sup>2</sup> + 2x) - (2x + 2))/((x + 1)(x + 2)) = (x<sup>2</sup> - 2)/((x + 1)(x + 2))</p>
+                <p>Answer: (x<sup>2</sup> - 2)/((x + 1)(x + 2)) (where x ≠ -1, -2)</p>
+            </div>
+
+            <div class="practice-box">
+                <h4>Practice Problem</h4>
+                <p>Subtract each pair of rational expressions. Simplify completely.</p>
+                <ol type="a">
+                    <li>5/x - 2/x</li>
+                    <li>3/(2a) - 1/(4a)</li>
+                    <li>x/(x + 3) - 1/x</li>
+                </ol>
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="strategy">
+            <h2>Complete Operations: Strategy Summary</h2>
+
+            <p>When working with rational expressions:</p>
+
+            <ol>
+                <li><strong>Always simplify first</strong> if possible</li>
+                <li><strong>Identify what operation</strong> you're doing</li>
+                <li><strong>For multiplication/division:</strong> Factor everything, multiply/divide, cancel common factors</li>
+                <li><strong>For addition/subtraction:</strong> Find LCD, rewrite fractions, combine, simplify</li>
+                <li><strong>Always state domain restrictions</strong> (values that make denominator zero)</li>
+            </ol>
+
+            <div class="example-box">
+                <h4>Complex Mixed Operations</h4>
+                <p>Simplify (((x<sup>2</sup> - 1))/(x + 2)) × ((x + 2)/(x - 1)) + 1/(x + 1)</p>
+                <p><strong>Step 1:</strong> Do multiplication first (order of operations):</p>
+                <p>Factor: ((x - 1)(x + 1))/(x + 2) × (x + 2)/(x - 1)</p>
+                <p>Cancel (x - 1) and (x + 2): (x + 1)</p>
+                <p><strong>Step 2:</strong> Now add: (x + 1) + 1/(x + 1)</p>
+                <p>Rewrite x + 1 = ((x + 1)<sup>2</sup>)/(x + 1)</p>
+                <p>(((x + 1)<sup>2</sup> + 1))/(x + 1) = (x<sup>2</sup> + 2x + 2)/(x + 1)</p>
+                <p>Answer: (x<sup>2</sup> + 2x + 2)/(x + 1) (where x ≠ -1, -2)</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <nav>
+            <a href="../../index.html">Back to Home</a> |
+            <a href="index.html">Mathematics Table Of Content</a>
+        </nav>
+    </body>
 </html>
